@@ -34,6 +34,10 @@ body a{
     text-decoration: none;
     color: #ffffff;  
 }
+/**     BODY INDEX  **/
+.carousel-inner{
+    max-height: 45rem;
+}
 /**     BODY RUTINAS  **/
 .grid{
     padding-top:30px;
