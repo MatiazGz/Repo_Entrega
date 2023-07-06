@@ -38,6 +38,12 @@ body a{
 .carousel-inner{
     max-height: 45rem;
 }
+@media (max-width:992px){
+    #subtitulo{
+        width: 90% !important;
+    }
+
+}
 /**     BODY RUTINAS  **/
 .grid{
     padding-top:30px;
