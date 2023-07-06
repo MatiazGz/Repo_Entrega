@@ -249,17 +249,3 @@ footer{
 .derechos p{
     color: rgba(255, 255, 255, 0.2);
 }
-/** INICIO DE SESION  **/
-.logimg{
-    display: flex;
-    justify-content: center;
-}
-.bodylogin{
-    background-image: url(../imagenes/fondo\ login.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.logologin{
-    height: 170px;
-    padding-top: 5px;
-}
