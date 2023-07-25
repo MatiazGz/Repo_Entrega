@@ -48,7 +48,7 @@ body a{
 
 }
 .seccion{
-    grid-area: seccion;
+    grid-area: seccion; 
 }
 .seccion2{
     grid-area: seccion2;
