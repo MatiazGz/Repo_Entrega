@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -21,20 +22,28 @@ body a {
   text-decoration: none;
   color: #ffffff;
 }
-body .d-flex {
+body #carousel-tamaño {
+  max-height: 710px;
+}
+body header .d-flex {
   height: 25px;
   padding-right: 10px;
 }
-body .d-flex input {
+body header .d-flex input {
   background-color: #242628;
   border-color: #5a5a5a;
 }
-body .d-flex button {
+body header .d-flex button {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #2ba3ad;
   border: none;
+}
+body header .buttonsesionpadre {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
 }
 body .grid {
   padding-top: 30px;
@@ -215,6 +224,9 @@ body footer .social-link a {
   line-height: 40px;
   border-radius: 50%;
   transition: all 0.5s ease;
+}
+body footer .social-link a:hover {
+  background-color: #cccccc;
 }
 body .derechos {
   padding-top: 40px;

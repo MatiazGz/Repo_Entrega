@@ -11,21 +11,32 @@ body{
         text-decoration: none;
         color: #ffffff;  
     }
+    #carousel-tamaño{
+        max-height: 710px;
+    }
     /**     HEADER  **/ 
-    .d-flex{
-        height: 25px;
-        padding-right: 10px;  
-        input{
-            background-color: #242628;
-            border-color: #5a5a5a;
+    header{
+        .d-flex{
+            height: 25px;
+            padding-right: 10px;  
+            input{
+                background-color: #242628;
+                border-color: #5a5a5a;
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #2ba3ad;  
+                border: none; 
+            }
         }
-        button{
+        .buttonsesionpadre{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #2ba3ad;  
-            border: none; 
+            justify-content: end;
+            padding: 10px;
         }
+
     }
     /**     BODY RUTINAS  **/
     .grid{
@@ -215,6 +226,9 @@ body{
                 border-radius: 50%;
                 transition: all .5s ease;
             }
+        }
+        .social-link a:hover{
+            background-color: #cccccc;
         }
         
     }
