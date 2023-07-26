@@ -1,6 +1,8 @@
-@import "partials/reset";   
+$fontSizeGrande: 1.5rem; 
+$fontSizeMediana: 1rem;                                                                            ;
 
-$fontSizeGrande: 3rem                                                                                 ;
+@import "partials/reset";  
+@import "partials/media";
 
 /**     BODY **/
 body{
@@ -38,11 +40,15 @@ body{
         }
 
     }
+    /**     NAVBAR  **/
+    #navbarSupportedContent{
+        font-size: $fontSizeGrande;
+    }
     /**     BODY RUTINAS  **/
     .grid{
         padding-top:30px;
         display: grid;
-        grid-template-columns: 2;
+        grid-template-columns: repeat(2);
         grid-template-rows: max-content;
         row-gap: 20px;
         column-gap: 80px;
@@ -77,28 +83,23 @@ body{
             transform: scale(1.04);
             box-shadow: 13px 15px 37px black;
         }
+        @include tablet{
+            display: block;
+            text-align: center;
+        }
     
     }
     /**     BODY NOSOTROS   **/
     .grid2{
         padding:200px;
         display: grid;
-        grid-template-columns: repeat(2, ) ;
+        grid-template-columns: repeat(2) ;
         row-gap: 40px;
         column-gap: 150px;
         justify-content: center;
         grid-template-areas:"grid21 grid22"
         "grid23 piedefoto" ;
-        h2{
-            color: #cccccc;
-        }
-        h3{
-            color: #cccccc;
-        }
-        h4{
-            color: #cccccc;
-        }
-        h5{
+        h2, h3, h4, h5{
             color: #cccccc;
         }
         .grid21{
@@ -118,39 +119,32 @@ body{
             display: flex;
             justify-content: end;
             align-items: center;
+            @include tablet{
+                justify-content: center;
+            }
         }
-        
+        @include tablet{
+            display: block;
+            text-align: center;
+            padding: 0%;
+        }
     
     }
     /**     BODY CONTACTO   **/
-    .grid3{
-        display: grid;
-        grid-template-columns: repeat(2);
+    .flex1{
+        display: flex;
         justify-content: center;
         column-gap: 200px;
-        grid-template-areas: "map-hijo map-hijo2";
-        p{
-        color: #cccccc;
-        padding: 6px;
-        }
-        h3{
-        color: #cccccc;
-        padding: 6px;
-        }
-        .horario{
+        p, h3 {
         color: #cccccc;
         padding: 6px;
         }
         .map-hijo{
-            grid-area: map-hijo;
             display: block;
             a{
             color: #cccccc;
             padding: 6px;
             }
-        }
-        .map-hijo2{
-            grid-area: map-hijo2;
         }
         .form-contacto{
             background-color:#212529;
@@ -183,6 +177,12 @@ body{
         .telydire{
             padding-top: 20px;
         }
+        
+        @include tablet{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
     
     }
     /**     FOOTER **/
@@ -192,9 +192,8 @@ body{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            
         }
-        .footer-links{
+        .footer-links, .social-link{
             h4 {
                 font-size: 20px;
                 color: #ffffff;
@@ -206,15 +205,6 @@ body{
             }
         }
         .social-link{
-            h4 {
-                font-size: 20px;
-                color: #ffffff;
-                margin-bottom: 25px;
-                font-weight: 200;
-                border-bottom: 2px solid #23828A;
-                padding-bottom: 10px;
-                display: inline-block;
-            }
             a{
                 display: inline-block;
                 min-height: 40px;  
@@ -230,8 +220,8 @@ body{
         .social-link a:hover{
             background-color: #cccccc;
         }
-        
     }
+    
     /**     DERECHOS **/
     .derechos{
         padding-top: 40px;
@@ -246,14 +236,23 @@ body{
         display: flex;
         justify-content: center;
     }
-    .bodylogin{
-        background-image: url(../imagenes/fondo\ login.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .logologin{
         height: 170px;
         padding-top: 10px;
     }
+    .flex2{
+        padding: 10px;
+        display: flex;
+        @include tablet{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
 
+}
+.bodylogin{
+    background-image: url(/imagenes/fondologin.jpg);        
+    background-repeat: no-repeat;
+    background-size: cover;
 }

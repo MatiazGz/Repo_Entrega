@@ -11,6 +11,7 @@ body {
   background-color: #343a40;
   font-family: sans-serif;
   /**     HEADER  **/
+  /**     NAVBAR  **/
   /**     BODY RUTINAS  **/
   /**     BODY NOSOTROS   **/
   /**     BODY CONTACTO   **/
@@ -45,10 +46,13 @@ body header .buttonsesionpadre {
   justify-content: end;
   padding: 10px;
 }
+body #navbarSupportedContent {
+  font-size: 1.5rem;
+}
 body .grid {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: repeat(2);
   grid-template-rows: max-content;
   row-gap: 20px;
   -moz-column-gap: 80px;
@@ -84,6 +88,12 @@ body .grid a :hover {
   transform: scale(1.04);
   box-shadow: 13px 15px 37px black;
 }
+@media screen and (max-width: 992px) {
+  body .grid {
+    display: block;
+    text-align: center;
+  }
+}
 body .grid2 {
   padding: 200px;
   display: grid;
@@ -94,16 +104,7 @@ body .grid2 {
   justify-content: center;
   grid-template-areas: "grid21 grid22" "grid23 piedefoto";
 }
-body .grid2 h2 {
-  color: #cccccc;
-}
-body .grid2 h3 {
-  color: #cccccc;
-}
-body .grid2 h4 {
-  color: #cccccc;
-}
-body .grid2 h5 {
+body .grid2 h2, body .grid2 h3, body .grid2 h4, body .grid2 h5 {
   color: #cccccc;
 }
 body .grid2 .grid21 {
@@ -124,38 +125,36 @@ body .grid2 .staff {
   justify-content: end;
   align-items: center;
 }
-body .grid3 {
-  display: grid;
-  grid-template-columns: repeat(2);
+@media screen and (max-width: 992px) {
+  body .grid2 .staff {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .grid2 {
+    display: block;
+    text-align: center;
+    padding: 0%;
+  }
+}
+body .flex1 {
+  display: flex;
   justify-content: center;
   -moz-column-gap: 200px;
        column-gap: 200px;
-  grid-template-areas: "map-hijo map-hijo2";
 }
-body .grid3 p {
+body .flex1 p, body .flex1 h3 {
   color: #cccccc;
   padding: 6px;
 }
-body .grid3 h3 {
-  color: #cccccc;
-  padding: 6px;
-}
-body .grid3 .horario {
-  color: #cccccc;
-  padding: 6px;
-}
-body .grid3 .map-hijo {
-  grid-area: map-hijo;
+body .flex1 .map-hijo {
   display: block;
 }
-body .grid3 .map-hijo a {
+body .flex1 .map-hijo a {
   color: #cccccc;
   padding: 6px;
 }
-body .grid3 .map-hijo2 {
-  grid-area: map-hijo2;
-}
-body .grid3 .form-contacto {
+body .flex1 .form-contacto {
   background-color: #212529;
   height: -moz-max-content;
   height: max-content;
@@ -164,29 +163,36 @@ body .grid3 .form-contacto {
   padding: 20px;
   border-radius: 3px;
 }
-body .grid3 .boton {
+body .flex1 .boton {
   border: none;
   background-color: #23828A;
   height: 30px;
   width: 100px;
 }
-body .grid3 .boton:hover {
+body .flex1 .boton:hover {
   background-color: #369ca5;
 }
-body .grid3 .form-box {
+body .flex1 .form-box {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
 }
-body .grid3 .form-box label {
+body .flex1 .form-box label {
   height: 35px;
 }
-body .grid3 .form-box textarea {
+body .flex1 .form-box textarea {
   width: 200px;
   max-height: 250px;
 }
-body .grid3 .telydire {
+body .flex1 .telydire {
   padding-top: 20px;
+}
+@media screen and (max-width: 992px) {
+  body .flex1 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 body footer {
   padding: 50px;
@@ -196,16 +202,7 @@ body footer .footer-row {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-body footer .footer-links h4 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 25px;
-  font-weight: 200;
-  border-bottom: 2px solid #23828A;
-  padding-bottom: 10px;
-  display: inline-block;
-}
-body footer .social-link h4 {
+body footer .footer-links h4, body footer .social-link h4 {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 25px;
@@ -240,12 +237,23 @@ body .logimg {
   display: flex;
   justify-content: center;
 }
-body .bodylogin {
-  background-image: url(../imagenes/fondo\ login.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 body .logologin {
   height: 170px;
   padding-top: 10px;
+}
+body .flex2 {
+  padding: 10px;
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  body .flex2 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.bodylogin {
+  background-image: url(/imagenes/fondologin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
