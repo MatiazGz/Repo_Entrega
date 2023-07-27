@@ -1,10 +1,9 @@
-$fontSizeGrande: 1.5rem; 
-$fontSizeMediana: 1rem;                                                                            ;
+$fontSizeGrande: 1.2rem; 
+$fontSizeMediana: 0.8rem;                                                                            ;
 
 @import "partials/reset";  
 @import "partials/media";
 
-/**     BODY **/
 body{
     
     background-color: #343a40;
@@ -16,7 +15,7 @@ body{
     #carousel-tamaño{
         max-height: 710px;
     }
-    /**     HEADER  **/ 
+    
     header{
         .d-flex{
             height: 25px;
@@ -40,11 +39,9 @@ body{
         }
 
     }
-    /**     NAVBAR  **/
     #navbarSupportedContent{
         font-size: $fontSizeGrande;
     }
-    /**     BODY RUTINAS  **/
     .grid{
         padding-top:30px;
         display: grid;
@@ -89,7 +86,6 @@ body{
         }
     
     }
-    /**     BODY NOSOTROS   **/
     .grid2{
         padding:200px;
         display: grid;
@@ -130,7 +126,6 @@ body{
         }
     
     }
-    /**     BODY CONTACTO   **/
     .flex1{
         display: flex;
         justify-content: center;
@@ -185,7 +180,6 @@ body{
         }
     
     }
-    /**     FOOTER **/
     footer{
         padding: 50px;
         .footer-row{
@@ -222,7 +216,6 @@ body{
         }
     }
     
-    /**     DERECHOS **/
     .derechos{
         padding-top: 40px;
         display: flex;
@@ -231,7 +224,6 @@ body{
             color: rgba(255, 255, 255, 0.2);
         }
     }
-    /** INICIO DE SESION  **/
     .logimg{
         display: flex;
         justify-content: center;

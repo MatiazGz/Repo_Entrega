@@ -6,18 +6,9 @@
   list-style: none;
 }
 
-/**     BODY **/
 body {
   background-color: #343a40;
   font-family: sans-serif;
-  /**     HEADER  **/
-  /**     NAVBAR  **/
-  /**     BODY RUTINAS  **/
-  /**     BODY NOSOTROS   **/
-  /**     BODY CONTACTO   **/
-  /**     FOOTER **/
-  /**     DERECHOS **/
-  /** INICIO DE SESION  **/
 }
 body a {
   text-decoration: none;
@@ -47,7 +38,7 @@ body header .buttonsesionpadre {
   padding: 10px;
 }
 body #navbarSupportedContent {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body .grid {
   padding-top: 30px;
