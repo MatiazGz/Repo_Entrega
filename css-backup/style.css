@@ -48,7 +48,7 @@ body a{
 
 }
 .seccion{
-    grid-area: seccion; 
+    grid-area: seccion;
 }
 .seccion2{
     grid-area: seccion2;
@@ -248,8 +248,6 @@ footer{
 }
 .derechos p{
     color: rgba(255, 255, 255, 0.2);
-<<<<<<< HEAD
-=======
 }
 /** INICIO DE SESION  **/
 .logimg{
@@ -264,5 +262,4 @@ footer{
 .logologin{
     height: 170px;
     padding-top: 10px;
->>>>>>> ver3
 }
