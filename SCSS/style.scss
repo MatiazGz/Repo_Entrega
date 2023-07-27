@@ -4,6 +4,8 @@ $fontSizeMediana: 0.8rem;                                                       
 @import "partials/reset";  
 @import "partials/media";
 
+//BODY
+
 body{
     
     background-color: #343a40;
@@ -42,6 +44,8 @@ body{
     #navbarSupportedContent{
         font-size: $fontSizeGrande;
     }
+    
+    //BODY RUTINAS
     .grid{
         padding-top:30px;
         display: grid;
@@ -86,6 +90,8 @@ body{
         }
     
     }
+
+    //BODY NOSOTROS
     .grid2{
         padding:200px;
         display: grid;
@@ -126,6 +132,7 @@ body{
         }
     
     }
+    //BODY CONTACTO
     .flex1{
         display: flex;
         justify-content: center;
@@ -180,6 +187,17 @@ body{
         }
     
     }
+    // BODY STORE
+    .flex2{
+        padding: 10px;
+        display: flex;
+        @include tablet{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    // FOOTER
     footer{
         padding: 50px;
         .footer-row{
@@ -224,6 +242,7 @@ body{
             color: rgba(255, 255, 255, 0.2);
         }
     }
+    //  LOGIN
     .logimg{
         display: flex;
         justify-content: center;
@@ -232,15 +251,6 @@ body{
         height: 170px;
         padding-top: 10px;
     }
-    .flex2{
-        padding: 10px;
-        display: flex;
-        @include tablet{
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-    
 
 }
 .bodylogin{

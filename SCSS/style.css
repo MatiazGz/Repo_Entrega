@@ -79,7 +79,7 @@ body .grid a :hover {
   transform: scale(1.04);
   box-shadow: 13px 15px 37px black;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   body .grid {
     display: block;
     text-align: center;
@@ -116,12 +116,12 @@ body .grid2 .staff {
   justify-content: end;
   align-items: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   body .grid2 .staff {
     justify-content: center;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   body .grid2 {
     display: block;
     text-align: center;
@@ -178,11 +178,21 @@ body .flex1 .form-box textarea {
 body .flex1 .telydire {
   padding-top: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   body .flex1 {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+}
+body .flex2 {
+  padding: 10px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  body .flex2 {
+    flex-direction: column;
+    text-align: center;
   }
 }
 body footer {
@@ -232,19 +242,9 @@ body .logologin {
   height: 170px;
   padding-top: 10px;
 }
-body .flex2 {
-  padding: 10px;
-  display: flex;
-}
-@media screen and (max-width: 992px) {
-  body .flex2 {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 .bodylogin {
   background-image: url(/imagenes/fondologin.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+}/*# sourceMappingURL=style.css.map */
