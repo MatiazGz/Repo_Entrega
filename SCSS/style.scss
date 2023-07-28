@@ -84,9 +84,15 @@ body{
             transform: scale(1.04);
             box-shadow: 13px 15px 37px black;
         }
-        @include tablet{
+        @include small{
             display: block;
             text-align: center;
+            .seccion, .seccion2, .seccion3, .seccion4{
+                img{
+                    max-width: 400px;
+                }
+                
+            }
         }
     
     }
@@ -121,17 +127,21 @@ body{
             display: flex;
             justify-content: end;
             align-items: center;
-            @include tablet{
+            @include small{
                 justify-content: center;
             }
         }
-        @include tablet{
+        @include small{
             display: block;
             text-align: center;
             padding: 0%;
+            .imgnos{
+                max-width: 450px;
+            }
         }
     
     }
+
     //BODY CONTACTO
     .flex1{
         display: flex;
@@ -180,22 +190,13 @@ body{
             padding-top: 20px;
         }
         
-        @include tablet{
+        @include medium{
             flex-direction: column;
             text-align: center;
             align-items: center;
         }
     
-    }
-    // BODY STORE
-    .flex2{
-        padding: 10px;
-        display: flex;
-        @include tablet{
-            flex-direction: column;
-            text-align: center;
-        }
-    }
+    }  
     
     // FOOTER
     footer{
@@ -242,6 +243,7 @@ body{
             color: rgba(255, 255, 255, 0.2);
         }
     }
+
     //  LOGIN
     .logimg{
         display: flex;

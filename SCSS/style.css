@@ -84,6 +84,9 @@ body .grid a :hover {
     display: block;
     text-align: center;
   }
+  body .grid .seccion img, body .grid .seccion2 img, body .grid .seccion3 img, body .grid .seccion4 img {
+    max-width: 400px;
+  }
 }
 body .grid2 {
   padding: 200px;
@@ -126,6 +129,9 @@ body .grid2 .staff {
     display: block;
     text-align: center;
     padding: 0%;
+  }
+  body .grid2 .imgnos {
+    max-width: 450px;
   }
 }
 body .flex1 {
@@ -178,21 +184,11 @@ body .flex1 .form-box textarea {
 body .flex1 .telydire {
   padding-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 902px) {
   body .flex1 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-  }
-}
-body .flex2 {
-  padding: 10px;
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  body .flex2 {
-    flex-direction: column;
-    text-align: center;
   }
 }
 body footer {

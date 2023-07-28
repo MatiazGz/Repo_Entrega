@@ -1,6 +1,12 @@
 //Media Queries
-@mixin tablet {
+@mixin small {
     @media screen and (max-width: 768px){
        @content;
     }
 }
+@mixin medium {
+    @media screen and (max-width: 902px){
+       @content;
+    }
+}
+
