@@ -17,6 +17,9 @@ body a {
 body #carousel-tamaño {
   max-height: 710px;
 }
+body .horario {
+  color: #cccccc;
+}
 body header .d-flex {
   height: 25px;
   padding-right: 10px;
@@ -235,7 +238,7 @@ body .logimg {
   justify-content: center;
 }
 body .logologin {
-  height: 170px;
+  height: 190px;
   padding-top: 10px;
 }
 
