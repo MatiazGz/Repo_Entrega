@@ -112,6 +112,9 @@ body{
         "grid23 piedefoto" ;
         h2, h3, h4, h5{
             color: #cccccc;
+            @include small{
+                padding: 20px;
+            }
         }
         .grid21{
             grid-area: grid21;
@@ -137,7 +140,7 @@ body{
         @include small{
             display: block;
             text-align: center;
-            padding: 0%;
+            padding: 20px;
             .imgnos{
                 max-width: 450px;
             }

@@ -104,6 +104,11 @@ body .grid2 {
 body .grid2 h2, body .grid2 h3, body .grid2 h4, body .grid2 h5 {
   color: #cccccc;
 }
+@media screen and (max-width: 768px) {
+  body .grid2 h2, body .grid2 h3, body .grid2 h4, body .grid2 h5 {
+    padding: 20px;
+  }
+}
 body .grid2 .grid21 {
   grid-area: grid21;
 }
@@ -131,7 +136,7 @@ body .grid2 .staff {
   body .grid2 {
     display: block;
     text-align: center;
-    padding: 0%;
+    padding: 20px;
   }
   body .grid2 .imgnos {
     max-width: 450px;
