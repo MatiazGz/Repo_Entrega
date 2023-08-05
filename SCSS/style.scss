@@ -208,10 +208,16 @@ body{
         }
     
     }  
+    .encabezadodos{
+        text-align: center;
+        color: #ffffff;
+        padding: 30px;
+        background-color: #6C757D;
+    }
     
     // FOOTER
     footer{
-        padding: 50px;
+        padding: 30px;
         .footer-row{
             display: flex;
             flex-wrap: wrap;
