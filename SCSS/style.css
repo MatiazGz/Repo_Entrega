@@ -47,6 +47,12 @@ body .encabezado {
   color: #ffffff;
   text-align: center;
 }
+body .encabezadodos {
+  text-align: center;
+  color: #ffffff;
+  padding: 30px;
+  background-color: #6C757D;
+}
 body .grid {
   padding-top: 30px;
   display: grid;
@@ -202,12 +208,6 @@ body .flex1 .telydire {
     text-align: center;
     align-items: center;
   }
-}
-body .encabezadodos {
-  text-align: center;
-  color: #ffffff;
-  padding: 30px;
-  background-color: #6C757D;
 }
 body footer {
   padding: 30px;

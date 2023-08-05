@@ -51,6 +51,12 @@ body{
     .encabezado{
         color: #ffffff;
         text-align: center;
+    } 
+    .encabezadodos{
+        text-align: center;
+        color: #ffffff;
+        padding: 30px;
+        background-color: #6C757D;
     }
     
     //BODY RUTINAS
@@ -207,14 +213,7 @@ body{
             align-items: center;
         }
     
-    }  
-    .encabezadodos{
-        text-align: center;
-        color: #ffffff;
-        padding: 30px;
-        background-color: #6C757D;
-    }
-    
+    }     
     // FOOTER
     footer{
         padding: 30px;
