@@ -43,6 +43,10 @@ body header .buttonsesionpadre {
 body #navbarSupportedContent {
   font-size: 1.2rem;
 }
+body .encabezado {
+  color: #ffffff;
+  text-align: center;
+}
 body .grid {
   padding-top: 30px;
   display: grid;
@@ -148,7 +152,7 @@ body .flex1 {
   -moz-column-gap: 200px;
        column-gap: 200px;
 }
-body .flex1 p, body .flex1 h3 {
+body .flex1 p, body .flex1 h2 {
   color: #cccccc;
   padding: 6px;
 }
@@ -248,7 +252,7 @@ body .logologin {
 }
 
 .bodylogin {
-  background-image: url(/imagenes/fondologin.jpg);
+  background-image: url(../imágenes/fondologin.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }/*# sourceMappingURL=style.css.map */

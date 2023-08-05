@@ -47,6 +47,11 @@ body{
     #navbarSupportedContent{
         font-size: $fontSizeGrande;
     }
+    //ENCABEZADO
+    .encabezado{
+        color: #ffffff;
+        text-align: center;
+    }
     
     //BODY RUTINAS
     .grid{
@@ -153,7 +158,7 @@ body{
         display: flex;
         justify-content: center;
         column-gap: 200px;
-        p, h3 {
+        p, h2{
         color: #cccccc;
         padding: 6px;
         }
@@ -262,7 +267,7 @@ body{
 
 }
 .bodylogin{
-    background-image: url(/imagenes/fondologin.jpg);        
+    background-image: url(../imágenes/fondologin.jpg);        
     background-repeat: no-repeat;
     background-size: cover;
 }
